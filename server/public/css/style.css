@@ -1,0 +1,75 @@
+body  {
+    background-color:whitesmoke;
+    
+}
+.header{
+    height:60px;
+    /* background-color:red; */
+    
+    font-size: 25px;
+    gap:2px
+
+}
+
+.logo{
+    height:50px;
+    width: 50px;
+   
+}
+
+.navbar ul{
+    list-style:none;
+    background-color:black;
+    padding:15px;
+}
+
+.navbar ul li {
+    display: inline;
+    padding:15px;
+}
+
+.navbar ul li a {
+    text-decoration : none;
+    margin-left:60px;
+    font-size:25px;
+    color:white;
+    
+}
+
+.banner{
+    
+    margin-top:100px;
+}
+
+.banner img{
+    height:450px;
+    width:100%;
+}
+
+.login-container{
+    /* height:auto;
+     */ 
+     margin-top: 100px;
+     display: block;
+    width :400px;
+   
+    padding:15px;
+    font-size:20px;
+   
+
+
+}
+
+.input{
+    height:30px;
+    width:300px;
+    margin: 5px;
+}
+
+.inputbtn{
+    margin: 5px;
+    height:30px;
+    width:300px;
+    background-color:black;
+    color:white;
+}

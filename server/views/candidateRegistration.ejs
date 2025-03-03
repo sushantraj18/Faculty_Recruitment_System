@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <%- include('./homeHeader.ejs')%>
+
+        <div class="login-container">
+
+            <center>Candidate Registration Form
+                <form action="">
+                    <input type="text" class="input" placeholder="Enter full name"/>
+                    <input class="input" type="email" placeholder="enter your mail" id="email" name="email"/><br>
+                    <input class="input"  type="password" placeholder="enter your password" id="password" name="password"/><br>
+                    <span>Select Gender : </span>
+                    <input type="radio" name="gender" id="male" class="male" value="Male">Male
+                    <input type="radio" name="gender" id="female" class="female" value="Female">Female <br/>
+                    <span>Date of Birth</span>
+                    <input type="date" class="input">
+                    <textarea name="address" rows="3" cols="39" placeholder="enter address"></textarea>
+                    <input class="input"  type="text" maxlength="10"  placeholder="enter mobile"  name="contact"/><br>
+                    <select class="input" name="qualification" >
+
+                        <option value="">Select Qualification</option>
+                        <option value="B.Com">B.Com</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="MBA">MBA</option>
+                        <option value="ME">ME</option>
+                        <option value="PHD ">PHD </option>
+                    </select>
+
+                    <input class="input"    placeholder="enter percentage"  name="percentage"/><br>
+                    
+                    <select class="input" name="experience" >
+
+                        <option value="">Select Experience</option>
+                        <option value="Fresher">Fresher</option>
+                        <option value="1+ Year">1+ Year</option>
+                        <option value="2+ Year">2+ Year</option>
+                        <option value="4+ Year">4+ Year</option>
+                        <option value="5+ Year">5+ Year</option>
+                        <option value="8+ Year">8+ Year</option>
+                        <option value="10+ Year">10+ Year</option>
+                       
+                        
+                    </select> <br>
+                    
+                    <span style="font-size:15px">Upload CV</span>
+                    <input type="file" class="file" id="file" name="file"/>
+                    
+                    <input class="inputbtn" type="submit" value="Register"/><br>
+                    <input class="inputbtn" type="reset" value="Reset"/><br>
+                </form>
+                 <a href="/candidate/candidateLogin">Already Register ?  Login</a>
+        </center>
+        </div>
+    
+   
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <%- include('./homeHeader.ejs')%>
+
+        <div class="login-container">
+
+            <center>Recruiter Registration Form
+                <form action="">
+                    <input type="text" class="input" placeholder="Enter your name"/>
+                    <select class="input" name="recruiter" >
+                        <option value="">Select Type</option>
+                        <option value="School">School</option>
+                        <option value="College">College</option>
+                        <option value="Professional Institute">Professional Institute</option>
+                    </select>
+
+                    <input class="input" type="email" placeholder="enter your mail" id="email" name="email"/><br>
+                    <input class="input"  type="password" placeholder="enter your password" id="password" name="password"/><br>
+                    <input class="input"  type="text" maxlength="10"  placeholder="enter mobile"  name="contact"/><br>
+                    
+                    <textarea name="address" rows="3" cols="39" placeholder="enter address"></textarea>
+
+                    <input class="inputbtn" type="submit" value="Register"/><br>
+                    <input class="inputbtn" type="reset" value="Reset"/><br>
+                </form>
+                 <a href="/recruiter/recruiterLogin">Already Register ?  Login</a>
+        </center>
+        </div>
+    
+   
+</body>
+</html>
