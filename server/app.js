@@ -1,4 +1,6 @@
 const express = require("express")
+require('dotenv').config()
+const dbConnect = require('./database/dbConnect')
 const adminRoute = require("./routes/adminRoute")
 const candidateRoute = require("./routes/candidateRoute")
 const recruiterRoute = require("./routes/recruiterRoute")
@@ -22,5 +24,6 @@ app.use("/admin",adminRoute)
 app.use("/candidate",candidateRoute)
 app.use("/recruiter",recruiterRoute)
 app.listen(port,()=>{
+    dbConnect()
     console.log(`Server running at http://localhost:${port}`)
 })

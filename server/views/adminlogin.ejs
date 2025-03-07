@@ -25,8 +25,9 @@
 
         <div class="login-container">
 
-            <center>Admin Login Form
-                <form action="">
+            <center>Admin Login Form <br>
+                <span style="color:red; font-size:18px "><%=message%></span>
+                <form action="/admin/adminLogin" method="post">
 
                     <input class="input" type="email" placeholder="enter your mail" id="email" name="email"/><br>
                     <input class="input"  type="password" placeholder="enter your password" id="password" name="password"/><br>
