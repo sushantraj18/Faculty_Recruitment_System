@@ -12,8 +12,9 @@
         <div class="login-container">
 
             <center>Recruiter Registration Form
-                <form action="">
-                    <input type="text" class="input" placeholder="Enter your name"/>
+                <form action="/recruiter/recruiterRegistration" method="post">
+                    <p style="color: red;"><%=message%></p>
+                    <input type="text" class="input" name="name" placeholder="Enter your name"/>
                     <select class="input" name="recruiter" >
                         <option value="">Select Type</option>
                         <option value="School">School</option>
