@@ -4,11 +4,12 @@ const dbConnect = require('./database/dbConnect')
 const adminRoute = require("./routes/adminRoute")
 const candidateRoute = require("./routes/candidateRoute")
 const recruiterRoute = require("./routes/recruiterRoute")
+const cookies = require("cookie-parser")
 const app = express()
 
 const port = 3000
 
-
+app.use(cookies())
 app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
